@@ -1,0 +1,8 @@
+E:\study\protbuf\Protobuf0919\uploadGithub\ProtoBufDemo\bin\ProtoBufDemo.dll.config
+E:\study\protbuf\Protobuf0919\uploadGithub\ProtoBufDemo\bin\ProtoBufDemo.dll
+E:\study\protbuf\Protobuf0919\uploadGithub\ProtoBufDemo\bin\ProtoBufDemo.pdb
+E:\study\protbuf\Protobuf0919\uploadGithub\ProtoBufDemo\bin\Google.ProtocolBuffers.dll
+E:\study\protbuf\Protobuf0919\uploadGithub\ProtoBufDemo\bin\Google.ProtocolBuffers.Serialization.dll
+E:\study\protbuf\Protobuf0919\uploadGithub\ProtoBufDemo\bin\Newtonsoft.Json.Net20.dll
+E:\study\protbuf\Protobuf0919\uploadGithub\ProtoBufDemo\obj\Release\ProtoBufDemo.dll
+E:\study\protbuf\Protobuf0919\uploadGithub\ProtoBufDemo\obj\Release\ProtoBufDemo.pdb

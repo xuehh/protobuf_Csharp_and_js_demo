@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="JS/Long.min.js"></script>
+    <script src="JS/ByteBufferAB.min.js"></script>
+    <script src="JS/ProtoBuf.min.js"></script>
+    <script src="JS/PBInit.js"></script>
+</head>
+<body>
+    <input type="file" id="iptChooseFile" value="" />
+    <div>
+        <span id="spnBegin"></span>&nbsp;&nbsp;
+        <span id="spnEnd"></span>&nbsp;&nbsp;
+    </div>
+    <input type="button" value="上传图片" onclick="Save()" />
+    <script type="text/javascript">
+        var fileInput = document.getElementById("iptChooseFile"),
+            spnBegin = document.getElementById("spnBegin"),
+            spnEnd = document.getElementById("spnEnd");
+        function Save() {
+            if (!fileInput.value) {
+                spnBegin.innerHTML = '没有选择文件';
+                return;
+            }
+            var file = fileInput.files[0];
+
+            var pbFactory = new PBFactoryClass("JS/PersonTest.proto", "ProtoBufDemo.PersonTest");
+            var model = pbFactory.createModel();
+            model.setName(file.name);
+            model.setId(1);
+            model.setEmail("zhangsan@mail.com");
+            model.setIsimg(true);
+            model.setSize(file.size.toString());
+
+
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                var data = e.target.result;
+                model.setBuf(data);
+
+
+                spnBegin.innerHTML = "开始时间" + GetTime();
+                pbFactory.postAndCallback("Save.ashx", model, SaveCall);
+            };
+            reader.readAsArrayBuffer(file);
+
+            //var buffer = model.toArrayBuffer();
+            //var buffer = pbFactory.encodeToBuffer(model);
+
+        }
+        function GetTime() {
+            var dt = new Date();
+            var hour = dt.getHours(), minu = dt.getMinutes(), seco = dt.getSeconds(), minseco = dt.getMilliseconds();
+            var str = hour.toString() + ":" + minu.toString() + ":" + seco.toString() + " " + minseco.toString();
+            return str;
+        }
+
+        function SaveCall(pro) {
+            spnEnd.innerHTML = "结束时间" + GetTime() + ".  上传：" + pro.name + "成功";
+
+        }
+    </script>
+</body>
+</html>

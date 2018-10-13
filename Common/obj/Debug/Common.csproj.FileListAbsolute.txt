@@ -1,0 +1,10 @@
+E:\study\protbuf\Protobuf0919\Common\bin\Debug\Common.dll
+E:\study\protbuf\Protobuf0919\Common\bin\Debug\Common.pdb
+E:\study\protbuf\Protobuf0919\Common\obj\Debug\Common.dll
+E:\study\protbuf\Protobuf0919\Common\obj\Debug\Common.pdb
+E:\study\protbuf\Protobuf0919\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+E:\study\protbuf\Protobuf0919\uploadGithub\Common\bin\Debug\Common.dll
+E:\study\protbuf\Protobuf0919\uploadGithub\Common\bin\Debug\Common.pdb
+E:\study\protbuf\Protobuf0919\uploadGithub\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+E:\study\protbuf\Protobuf0919\uploadGithub\Common\obj\Debug\Common.dll
+E:\study\protbuf\Protobuf0919\uploadGithub\Common\obj\Debug\Common.pdb

@@ -1,0 +1,4 @@
+E:\study\protbuf\Protobuf0919\Common\bin\Release\Common.dll
+E:\study\protbuf\Protobuf0919\Common\bin\Release\Common.pdb
+E:\study\protbuf\Protobuf0919\Common\obj\Release\Common.dll
+E:\study\protbuf\Protobuf0919\Common\obj\Release\Common.pdb

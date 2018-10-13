@@ -1,0 +1,4 @@
+命令说明：
+protoc -I=当前目录的绝对路径 --cs_out=输出cs文件的绝对目录 proto文件的绝对路径
+eg:
+protoc -I=C:/proto --cs_out=C:/proto/outcs C:/proto/PersonTest.proto
